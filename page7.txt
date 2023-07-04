@@ -1,0 +1,18 @@
+<html>
+<head>
+<style>
+p
+{
+font-size: 100px;
+text-align: center;
+
+}
+</style>
+</head>
+<body>
+
+ <a href="page6.html">
+ <p>twa e posledno</P>
+    </a>
+</body>
+</html>

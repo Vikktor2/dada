@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  	h1 {
+      text-align: center;
+      color: pink;
+    }
+    
+    p {
+      color: pink;
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 20px;
+    }
+
+  	h2 {
+      text-align: center;
+      color: pink;
+    }
+
+    body {
+      background-image: url("snimka2.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  
+    
+    .moving-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 400px;
+    }
+
+  
+    .moving-window {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: #ccc;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      animation: moveCircle 6s infinite linear;
+    }
+
+   
+    @keyframes moveCircle {
+      0% { transform: translate(-50%, -50%) rotate(0deg) translateY(-120px) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg) translateY(-120px) rotate(-360deg); }
+    }
+
+    /* Styling for the title */
+    .window-title {
+      font-size: 14px;
+      color: #fff;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+<h1> Laino </h1>
+  <div class="moving-container">
+    <a href="page1.html">
+      <div class="moving-window" style="animation-delay: 1s;">
+        <h2 class="window-title">;)</h2>
+      </div>
+    </a>
+    <a href="page2.html">
+      <div class="moving-window" style="animation-delay: 0s;">
+        <h2 class="window-title">Kurwa neshtasna</h2>
+      </div>
+    </a>
+  </div>
+  <p>Natisni 1 ot dvete, posle moje i dvete ama purwo ednoto. WNIMAVAI KOE NATISKASH PURWO.<br>P.S - dano ne sgreshish <br>podskazka "KURWA NESHTASNA"</p>
+</body>
+</html>
